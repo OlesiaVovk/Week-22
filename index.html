@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/js-datepicker/dist/datepicker.min.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="wrapper">
+            <div class="column-left">
+                <div class="column-left__logo">
+                    <h1>Collab.io</h1>
+                </div>
+                <div class="column-left__header">
+                    <h3>Project</h3>
+                    <select class="select">
+                        <option>Hope project</option>
+                        <option>First project</option>
+                        <option>Second project</option>
+                        <option>Third project</option>
+                    </select>
+                </div>
+                <div class="column-left__list">
+                    <ul>
+                        <li class="dash">Dashboard</li>
+                        <li class="backlog">Backlog</li>
+                        <li class="sprint">Active sprint</li>
+                        <li class="reports">Reports</li>
+                        <li class="pages">Pages</li>
+                        <li class="settings">Setting</li>
+                    </ul>
+                </div>
+                <div class="column-left__button">
+                    <div class="column-left__text">Add New Task</div>
+                    <button class="add">+</button>
+                </div>
+            </div>
+            <div class="dashboard">
+                <div class="dashboard__header">
+                    <div>
+                        <h2>Dashboard</h2>
+                        <div id="dashboard__date"></div>
+                    </div>
+                    <div> <input type="text" id="dashboard__calend" />
+                    </div>
+                </div>
+
+                <div class="jumbotron">
+                    <h1 class="display-4">Welcome, Olesia Vovk!</h1>
+                    <p class="lead">You have 2 project to finish and already completed 68% from your monthly level. Keep
+                        going to your goal.</p>
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" role="button">More ></a>
+                    </p>
+                </div>
+                <div class="dashboard__shedule">
+                    <div class="dashboard-graph">
+                        <div class="graphBar">
+                            <canvas id="myChart1"></canvas>
+                        </div>
+                        <div class="graphDoughnut"> <canvas id="myChart2"></canvas>
+                        </div>
+                    </div>
+                    <div class="lineChart">
+                        <canvas id="myChart3"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="column-right">
+                <div class="profile__header">
+                    <h2>Profile</h2>
+                    <p class="profile__notification">80% Completed your profile</p>
+                </div>
+                <div class="profile">
+                    <div class="profile__image">
+                        <img src="images/Oval.png" /></div>
+                    <div class="profile__name">
+                        <h2>Olesia Vovk</h2>
+                    </div>
+                    <p class="profile__position">Front-End Junior Developer</p>
+                </div>
+
+                <div class="current-project">
+                    <div class="current-project__header">
+                        <h2>Current Project</h2>
+                        <p class="current-project__button">View All</p>
+                    </div>
+                    <div class="current-project__columns">
+                        <div class="hope"><img src="images/Hope.png" /></div>
+                        <div class="core"><img src="images/Core.png" /></div>
+                    </div>
+                </div>
+                <div class="comments">
+                    <div class="comments__header">
+                        <h2>Comment</h2>
+                    </div>
+                    <p class="comments__notification">You have 3 comment on project</p>
+                    <div class="comments__list">
+                        <div class="list">
+                            <div class="list-text">Oluchi Mazi
+                                <p>I’m getting a late today</p>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-text">Shinohara Ryoma
+                                <p>What are the homework…</p>
+                            </div>
+                        </div>
+                        <div class="list">
+                            <div class="list-text">Paromita Haque
+                                <p>I’m getting a late today</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bundle.js"></script>
+</body>
+
+</html>
